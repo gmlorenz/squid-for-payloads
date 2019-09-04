@@ -9,7 +9,9 @@ sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
 #export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games";
 
 apt remove -y squid;
-apt-get -y install squid
+echo -e "${cor[2]} install squid"
+
+
 # install squid
 cd 
 wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/gmlorenz/squid-for-payloads/master/squid.conf" 
