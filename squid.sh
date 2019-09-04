@@ -12,7 +12,7 @@ apt remove -y squid;
 apt-get -y install squid
 # install squid
 cd 
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/PHCarl10/Deb7AutoScriptVPS/master/squid3.conf" 
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/gmlorenz/squid-for-payloads/master/squid.conf" 
 
 sed -i $MYIP2 /etc/squid/squid.conf; 
 service squid restart 
